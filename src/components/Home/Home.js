@@ -6,10 +6,10 @@ import banner from '../../images/banner.jpeg'
 const Home = () => {
     return (
         <div className="text-center py-5">
-            <img src={banner} alt="" />
+            <img src={banner} style={{width: "31.25rem", height: "25rem"}} alt="" />
             <div>
-                <Link to="/webinar" className="btn btn-primary">Webinar</Link>
-                <Link to="/blogs" className="btn btn-primary">Blogs</Link>
+                <Link to="/webinar" className="btn btn-primary m-1">Webinar</Link>
+                <Link to="/blogs" className="btn btn-primary m-1">Blogs</Link>
             </div>
             
         </div>
