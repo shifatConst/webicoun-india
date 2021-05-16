@@ -9,10 +9,10 @@ const Blogs = () => {
         .then(res => res.json())
         .then(data => setBlogs(data.blogs));
     }, []);
-    // const {author, image , title} = blogs
+
     return (
-        <div className="row">
-            <h1>Total blogs: {blogs.length}</h1>
+        <div className="row py-5">
+            <h1 className="text-center mb-5">Total blogs: {blogs.length}</h1>
             {
                 blogs.map(blog => <BlogCards blog={blog}></BlogCards>)
             }

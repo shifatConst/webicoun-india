@@ -9,12 +9,13 @@ import {
 import Home from './components/Home/Home';
 import Webinar from './components/Webinar/Webinar';
 import Blogs from './components/Blogs/Blogs';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <Router>
       <div>
-        <nav className="sticky-top nav-style">
+        <nav className="sticky-top nav-style bg-dark">
           <ul className="nav nav-tabs justify-content-center">
             <li className="nav-item">
               <Link className="nav-link" to="/">Home</Link>
@@ -43,6 +44,7 @@ function App() {
           </Route>
         </Switch>
       </div>
+      <Footer></Footer>
     </Router>
   );
 }
